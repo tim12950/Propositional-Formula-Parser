@@ -135,7 +135,7 @@ public class Application {
 									//n.data = (current node).data
 									for(int j = 0; j < domainSize; j++) {
 										if ((node.getData()).equals(truthFunction.getDataFromDomainNode(j))) {
-											(truthFunction.getDomainNode(i)).setTV(node.getTV());
+											(truthFunction.getDomainNode(j)).setTV(node.getTV());
 										}
 									}
 									exit = true;
