@@ -15,4 +15,4 @@ The formation rules for wffs:
 
 The truth value of a user-entered wff is computed using user-entered truth values for the variables in the wff, and according to the usual truth functions associated with each connective.
 
-For an in-depth look at the theoretical foundation behind the parser and other details, see the background_and_details.txt file.
+For an in-depth look at the theoretical foundation behind the parser, see the theoretical_foundation.pdf file.
