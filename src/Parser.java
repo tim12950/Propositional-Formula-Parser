@@ -34,11 +34,11 @@ public class Parser {
 						int alphaLength = alpha.length();
 						int newIndex = connectiveEnd(s, 1 + alphaLength);
 						
-						t.addNode(new Node(alpha, level+1));
-						n.setLeftChild(t.getLastNode());
-						parse(t.getLastNode(), t);
-						
 						if (newIndex != -1 && newIndex < s.length()-1 && s.charAt(s.length()-1) == ')') {
+							t.addNode(new Node(alpha, level+1));
+							n.setLeftChild(t.getLastNode());
+							parse(t.getLastNode(), t);
+							
 							beta = s.substring(newIndex, s.length()-1);
 							t.addNode(new Node(beta, level+1));
 							n.setRightChild(t.getLastNode());
